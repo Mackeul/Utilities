@@ -68,3 +68,10 @@ openssl pkcs12 -export -out $PFX_FILE -in $CERT_FILE -inkey $KEY_FILE -name $PFX
 echo ""
 echo " ------------------ "
 echo "Done."
+echo ""
+echo "Next steps:"
+echo " - Install the Certificate / Private Key on your Web Server / Application"
+echo "   -> Read the manual of the Web Server / Application to install SSL certificates."
+echo " - Copy the CA Root certificate and import it in the proper Certificate Store of the OS/Application"
+echo "   -> [Windows] Copy CAPrivate.pem to computer, rename to CAPrivate.crt and import to Trusted Root Authorities Store."
+
